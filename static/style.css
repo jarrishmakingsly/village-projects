@@ -1,0 +1,247 @@
+/* =================================
+**** [Core Stylesheet - v1.0] ****
+================================= */
+
+/* ----------------------------------------------
+:: Template Name: Fancy - Creative Agency Template
+:: Template Author: Colorlib
+:: Template Author URI: https://colorlib.com
+:: Version: v1.0.0
+:: Last Updated: 12-08-2017
+---------------------------------------------- */
+
+/ **** [Fonts: Popins + Playfair Display] **** /
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:300,400,500,600,700');
+
+/ **** Import All CSS **** /
+
+@import 'bootstrap/bootstrap.min.css';
+@import 'others/animate.css';
+@import 'others/magnific-popup.css';
+@import 'others/owl.carousel.min.css';
+@import 'others/font-awesome.min.css';
+@import 'others/elegant-font.css';
+@import 'others/themify-icons.css';
+
+/* --------------------
+:: 1.0 Base CSS
+-------------------- */
+
+*,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #232d37;
+    line-height: 1.25;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #51545f;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+WordPress Themes & Website Templates - Colorlib
+https://colorlib.com
+a,
+a:hover,
+a:focus,
+a:active {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    -webkit-transition-duration: 600ms;
+    transition-duration: 600ms;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+.fancy-table {
+    display: table;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.fancy-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.playfair-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/ Preloader CSS /
+
+#preloader {
+    overflow: hidden;
+    background: #7450fe;
+    background: -webkit-linear-gradient(to right, #7450fe, #21d397);
+    background: -webkit-linear-gradient(left, #7450fe, #21d397);
+    background: linear-gradient(to right, #7450fe, #21d397);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.loader {
+    width: 46px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -23px;
+    z-index: 9;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+    30% {
+        -webkit-transform: translateY(-0.25em);
+    }
+    50% {
+        -webkit-transform: translateY(0%);
+    }
+    70% {
+        -webkit-transform: translateY(0.25em);
+    }
+}
+
+.loader .inner1,
+.loader .inner2,
+.loader .inner3 {
+    display: inline-block;
+    margin: 0.125em;
+    width: 0.5em;
+    height: 0.5em;
+    border: 1px solid #fff;
+    border-radius: 1em;
+    background-color: #fff;
+    -webkit-transform-origin: 50%;
+    -webkit-animation-duration: 0.75s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.loader .inner2 {
+    -webkit-animation-delay: 0.1875s;
+}
+
+.loader .inner3 {
+    -webkit-animation-delay: 0.375s;
+}
+
+/ Basic CSS /
+
+.section-padding-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-padding-120-0 {
+    padding-top: 120px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-120 {
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+.section-padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-padding-100-70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.section-padding-100-0 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-100 {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.section-padding-200 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.section-padding-200-0 {
+    padding-top: 200px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-200 {
+    padding-top: 0;
+    padding-bottom: 200px;
+}
+
+.section-padding-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-padding-80-50 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.header_area {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 90;
+    height: 100px;
+    top: 0;
+    left: 0;
+    padding: 0 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+
+

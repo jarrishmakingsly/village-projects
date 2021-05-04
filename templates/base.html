@@ -1,0 +1,118 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Panchayath App - Onestop site for all your panchayath related tasks</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static  'villageapp/img/core-img/favicon.ico' %}">
+
+    <!-- Core Stylesheet -->
+    <link href="{% static  'villageapp/css/style.css' %}" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="{% static  'villageapp/css/responsive/responsive.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="loader">
+            <span class="inner1"></span>
+            <span class="inner2"></span>
+            <span class="inner3"></span>
+        </div>
+    </div>
+
+    
+       
+
+   {% block breadcumb %}
+    <!-- ***** Breadcumb Area Start ***** -->
+    <div class="fancy-breadcumb-area bg-img bg-overlay custom-breadcumb-area"   style="background-image: url('/static/villageapp/img/bg-img/hero-1.jpg');">
+    </div>
+    <!-- ***** Breadcumb Area End ***** -->
+    {% endblock breadcumb %}
+
+    {% block buttons %}
+    {% endblock %}
+    <!-- ****** Single Blog Area Start ****** -->
+    <section class="single_blog_area section-padding-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="row no-gutters">
+
+                        {% block content %}
+
+                        {% endblock %}
+                    </div>
+                </div>
+
+                {% block notifications %}
+
+                {% endblock %}
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ***** Footer Area Start ***** -->
+        <!-- Footer Copywrite -->
+        <div class="footer-copywrite-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="copywrite-content h-100 d-flex align-items-center justify-content-between">
+                            <!-- Copywrite Text -->
+                            <div class="copywrite-text">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            </div>
+                            <!-- Footer Nav -->
+                            <div class="footer-nav">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static  'villageapp/js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static  'villageapp/js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap-4 js -->
+    <script src="{% static  'villageapp/js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static  'villageapp/js/others/plugins.js' %}"></script>
+    <!-- Active JS -->
+    <script src="{% static  'villageapp/js/active.js' %}"></script>
+</body>
